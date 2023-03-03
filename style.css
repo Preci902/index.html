@@ -1,0 +1,97 @@
+body{
+  background-image: linear-gradient(to left, rgb(128, 0, 128),black);
+  /* background-color: rgb(12, 1, 6) ; */
+  color: antiquewhite;
+}
+#parent{
+  
+}
+.header-nav{
+  
+  
+}
+.header-div{
+  display: flex;
+  justify-content: center;
+  gap: 270px;
+  margin: 70px 0px 0px 0px;
+  font-size: xx-large;
+  font-weight: bolder;
+  font-family: 'Inter', sans-serif;
+}
+.glow{
+  -webkit-animation: glow 1s   ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 30px #ca6396, 0 0 40px #db73a7, 0 0 50px #eb79b2, 0 0 60px #d6659e, 0 0 70px #d8639e;
+  }
+  to {
+    text-shadow: 0 0 15px #fff, 0 0 1px #e48db8, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+ .header-div a{
+  text-decoration: none;
+  color: aliceblue;
+}
+.waviy {
+  background-color: antiquewhite;
+  height: 100px;
+  width: 80%;
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 60px;
+  margin: 100px 0px 0px 50px;
+  font-weight: bolder;
+  color: rgb(31, 5, 5);
+  border-radius: 20px;
+  
+}
+.waviy span {
+  font-family: 'Alfa Slab One', cursive;
+  display: inline-block;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+.div-container{
+  color: #af7091;
+  display: flex;
+  margin: 40px 0px 0px 30px;
+  font-size: xx-large;
+}
+.flip{
+  display: flex;
+  gap: 40px;
+  width: 700px;
+  position: absolute;
+  top: 470px;
+  left: 100px;
+  
+}
+
+.transit{
+  font-weight: bolder;
+  margin: 50px 0px 0px 200px;
+  height: 50px;
+}
+img {
+  width: 400px;
+  height: 400px;
+  margin-right: 40px;
+  position: absolute;
+  right: 50px;
+  top: 200px;
+  border-radius: 100%;
+}
